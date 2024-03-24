@@ -24,7 +24,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 source ~/.fzf/install​
 
 # rc
-ln -f $BASE_DIR/.zshrc $HOME/.zshrc
+ln -s $BASE_DIR/.zshrc $HOME/.zshrc
 
 # p10k config
-ln -f $BASE_DIR/.p10k.zsh $HOME/.p10k.zsh
+ln -s $BASE_DIR/.p10k.zsh $HOME/.p10k.zsh
