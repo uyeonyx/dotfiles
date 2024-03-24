@@ -28,8 +28,16 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/.powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+###############################################################################
+
+# used for gh cli auto completion
+# see: https://cli.github.com/manual/gh_completion
+[[ -d ~/.oh-my-zsh/completions ]] || mkdir ~/.oh-my-zsh/completions
+gh completion -s zsh > ~/.oh-my-zsh/completions/_gh
+autoload -U compinit
+compinit -i
 
 ###############################################################################
 
