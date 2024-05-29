@@ -42,7 +42,7 @@ while ! docker-compose ps | grep cloudbeaver | grep " Up "; do
   sleep 2
 done
 
-sleep 10
+sleep 15
 
 sudo rm -rf ~/cloudbeaver
 sudo rm -rf $HOME/code/snippets/cloudbeaver
