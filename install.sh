@@ -45,7 +45,8 @@ done
 sleep 10
 
 sudo rm -rf ~/cloudbeaver
-mv -f $HOME/code/snippets/cloudbeaver $HOME
+sudo rm -rf $HOME/code/snippets/cloudbeaver
+mv -f $HOME/.local/shared/chezmoi/cloudbeaver $HOME
 
 docker-compose down
 docker-compose up -d
