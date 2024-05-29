@@ -33,7 +33,8 @@ mkdir -p $HOME/code
 mkdir -p $HOME/code/snippets
 mv -f $HOME/snippets $HOME/code
 mv -f $HOME/code/snippets/nginx $HOME
-mv -f $HOME/code/snippets/cloudbeaver $HOME
+mv -f ~/.local/share/chezmoi/cloudbeaver ~/
+rm -rf $HOME/code/snippets/cloudbeaver
 
 cd $HOME/code/snippets
 docker-compose down
