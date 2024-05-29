@@ -34,20 +34,7 @@ mkdir -p $HOME/code/snippets
 mv -f $HOME/snippets $HOME/code
 mv -f $HOME/code/snippets/nginx $HOME
 
-
 cd $HOME/code/snippets
-docker-compose up -d cloudbeaver
-
-while ! docker-compose ps | grep cloudbeaver | grep " Up "; do
-  sleep 2
-done
-
-sleep 15
-
-sudo rm -rf ~/cloudbeaver
-sudo rm -rf $HOME/code/snippets/cloudbeaver
-mv -f $HOME/.local/shared/chezmoi/cloudbeaver $HOME
-
 docker-compose down
 docker-compose up -d
 
