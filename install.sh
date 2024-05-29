@@ -12,7 +12,7 @@ zshrc() {
     mkdir -p $HOME/code/snippets
     mv -f $HOME/dots/zshrc $HOME/.zshrc
     mv -f $HOME/dots/p10k.zsh $HOME/.p10k.zsh
-    mv -f $HOME/snippets $HOME/code/snippets
+    mv -f $HOME/snippets $HOME/code
 }
 
 
