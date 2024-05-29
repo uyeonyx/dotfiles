@@ -36,10 +36,6 @@ mkdir -p $HOME/code/snippets
 mv -f $HOME/snippets $HOME/code
 mv -f $HOME/code/snippets/nginx $HOME
 
-cd $HOME/code/snippets
-docker-compose down
-docker-compose up -d
-
 mkdir -p $HOME/cloudbeaver
 mkdir -p $HOME/cloudbeaver/workspace
 mkdir -p $HOME/cloudbeaver/workspace/.data
@@ -47,3 +43,8 @@ mkdir -p $HOME/cloudbeaver/workspace/GlobalConfiguration
 mkdir -p $HOME/cloudbeaver/workspace/GlobalConfiguration/.dbeaver
 mv -f $HOME/code/snippets/cloudbeaver/cloudbeaver.runtime.conf $HOME/cloudbeaver/workspace/.data/.cloudbeaver.runtime.conf
 mv -f $HOME/code/snippets/cloudbeaver/data-source.json $HOME/cloudbeaver/workspace/GlobalConfiguration/.dbeaver/data-source.json
+
+cd $HOME/code/snippets
+docker-compose down
+docker-compose up -d
+
