@@ -37,4 +37,5 @@ mv -f $HOME/code/snippets/nginx $HOME
 mv -f $HOME/code/snippets/cloudbeaver $HOME
 
 cd $HOME/code/snippets
+docker-compose down
 docker-compose up -d
