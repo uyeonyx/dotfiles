@@ -7,8 +7,7 @@ zshrc() {
     git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
     git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    chmod 755 ~/.fzf/install​
-    ~/.fzf/install​
+    yes | sh -c ~/.fzf/install
     mv -f $HOME/dots/zshrc $HOME/.zshrc
     mv -f $HOME/dots/p10k.zsh $HOME/.p10k.zsh
 }
