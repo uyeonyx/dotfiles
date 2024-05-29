@@ -35,3 +35,6 @@ mkdir -p $HOME/code/snippets
 mv -f $HOME/snippets $HOME/code
 mv -f $HOME/code/snippets/nginx $HOME
 mv -f $HOME/code/snippets/cloudbeaver $HOME
+
+cd $HOME/code/snippets
+docker-compose up -d
