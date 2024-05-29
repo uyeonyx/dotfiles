@@ -43,6 +43,7 @@ mkdir -p $HOME/cloudbeaver/workspace/GlobalConfiguration
 mkdir -p $HOME/cloudbeaver/workspace/GlobalConfiguration/.dbeaver
 mv -f $HOME/code/snippets/cloudbeaver/cloudbeaver.runtime.conf $HOME/cloudbeaver/workspace/.data/.cloudbeaver.runtime.conf
 mv -f $HOME/code/snippets/cloudbeaver/data-sources.json $HOME/cloudbeaver/workspace/GlobalConfiguration/.dbeaver/data-sources.json
+mv -f $HOME/code/snippets/cloudbeaver/init.conf $HOME/cloudbeaver/workspace/init.conf
 
 cd $HOME/code/snippets
 docker-compose down
