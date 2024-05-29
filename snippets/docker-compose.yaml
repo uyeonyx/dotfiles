@@ -48,5 +48,4 @@ services:
 
 networks:
   _network:
-    driver: bridge                                                                                                                      44,65         All
-
+    driver: bridge
