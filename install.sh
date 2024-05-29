@@ -8,8 +8,8 @@ zshrc() {
     git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install​
-    cat .zshrc > $HOME/.zshrc
-    cat .p10k.zsh > $HOME/.p10k.zsh
+    mv -f $HOME/dots/zshrc $HOME/.zshrc
+    mv -f $HOME/dots/p10k.zsh $HOME/.p10k.zsh
 }
 
 
