@@ -44,7 +44,7 @@ done
 
 sleep 10
 
-rm -rf ~/cloudbeaver
+sudo rm -rf ~/cloudbeaver
 mv -f $HOME/code/snippets/cloudbeaver $HOME
 
 docker-compose down
