@@ -1,10 +1,10 @@
 data:
   scripts:
-    - ~/.local/share/chezmoi/install.sh
+    - "~/.local/share/chezmoi/install.sh"
 
 applyHook:
   - name: "Run install.sh"
     command: "sh"
     args:
       - "-c"
-      - "{{ joinList \" \" .scripts }}"
+      - "~/.local/share/chezmoi/install.sh"
