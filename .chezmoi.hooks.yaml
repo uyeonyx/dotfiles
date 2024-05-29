@@ -1,0 +1,4 @@
+apply:
+  - command: bash
+    args: ["-c", "~/.local/share/chezmoi/install.sh"]
+    when: always
