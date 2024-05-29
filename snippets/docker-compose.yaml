@@ -40,7 +40,8 @@ services:
     ports:
       - "8978:8978"
     volumes:
-      - ${HOME}/cloudbeaver/workspace:/opt/cloudbeaver/workspace
+      - ${HOME}/cloudbeaver/workspace/.data/.cloudbeaver.runtime.conf:/opt/cloudbeaver/workspace/.data/.cloudbeaver.runtime.conf
+      - ${HOME}/cloudbeaver/workspace/GlobalConfiguration/.dbeaver/data-source.json:/opt/cloudbeaver/workspace/GlobalConfiguration/.dbeaver/data-source.json
     networks:
       - _network
     restart: unless-stopped
