@@ -29,6 +29,3 @@ echo "_ls_colors=':ow=01;33'" >> ~/.zshrc
 echo 'zstyle ":completion:*:default" list-colors "${(s.:.)_ls_colors}"' >> ~/.zshrc
 echo 'LS_COLORS+=$_ls_colors' >> ~/.zshrc
 
-git config --global user.name 'uyeonyx'
-git config --global user.email 'uyeon.dev@gmail.com'
-
