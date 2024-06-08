@@ -33,8 +33,8 @@ echo 'zstyle ":completion:*:default" list-colors "${(s.:.)_ls_colors}"' >> ~/.zs
 echo 'LS_COLORS+=$_ls_colors' >> ~/.zshrc
 
 USER=$(whoami)
-NGINX_DIR="/home/$USER/workspace/nginx"
-SOURCE_FILE="$HOME/workspace/nginx.conf"
+NGINX_DIR="$HOME/workspace/nginx"
+SOURCE_FILE="$HOME/workspace/nginx/nginx.conf"
 sudo sed -e "s|\${USER}|$USER|g" -e "s|\${NGINX_DIR}|$NGINX_DIR|g" "$SOURCE_FILE" > "$SOURCE_FILE"
 
 rm -rf ~/dots
