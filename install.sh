@@ -32,6 +32,11 @@ echo "_ls_colors=':ow=01;33'" >> ~/.zshrc
 echo 'zstyle ":completion:*:default" list-colors "${(s.:.)_ls_colors}"' >> ~/.zshrc
 echo 'LS_COLORS+=$_ls_colors' >> ~/.zshrc
 
+USER=$(whoami)
+NGINX_DIR="/home/$USER/workspace/nginx"
+SOURCE_FILE="$HOME/workspace/nginx.conf"
+sudo sed -e "s|\${USER}|$USER|g" -e "s|\${NGINX_DIR}|$NGINX_DIR|g" "$SOURCE_FILE" > "$SOURCE_FILE"
+
 rm -rf ~/dots
 rm -rf ~/README.md
 rm -rf ~/install.sh
