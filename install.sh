@@ -29,11 +29,6 @@ echo "_ls_colors=':ow=01;33'" >> ~/.zshrc
 echo 'zstyle ":completion:*:default" list-colors "${(s.:.)_ls_colors}"' >> ~/.zshrc
 echo 'LS_COLORS+=$_ls_colors' >> ~/.zshrc
 
-mkdir -p $HOME/code
-mkdir -p $HOME/code/snippets
-mv -f $HOME/snippets $HOME/code
-mv -f $HOME/code/snippets/nginx $HOME
-
 git config --global user.name 'uyeonyx'
 git config --global user.email 'uyeon.dev@gmail.com'
 
