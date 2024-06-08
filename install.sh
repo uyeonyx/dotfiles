@@ -35,7 +35,7 @@ echo 'LS_COLORS+=$_ls_colors' >> ~/.zshrc
 USER=$(whoami)
 NGINX_DIR="$HOME/workspace/nginx"
 SOURCE_FILE="$HOME/workspace/nginx/nginx.conf"
-sudo sed -e "s|\${USER}|$USER|g" -e "s|\${NGINX_DIR}|$NGINX_DIR|g" "$SOURCE_FILE" > "$SOURCE_FILE"
+sudo sed -i -e "s|\${USER}|$USER|g" -e "s|\${NGINX_DIR}|$NGINX_DIR|g" "$SOURCE_FILE"
 
 rm -rf ~/dots
 rm -rf ~/README.md
