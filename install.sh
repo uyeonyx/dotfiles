@@ -37,7 +37,3 @@ mv -f $HOME/code/snippets/nginx $HOME
 git config --global user.name 'uyeonyx'
 git config --global user.email 'uyeon.dev@gmail.com'
 
-cd $HOME/code/snippets
-docker-compose down
-docker-compose up -d
-
