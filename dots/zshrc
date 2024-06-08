@@ -56,3 +56,4 @@ fpath=($fpath ~/.zsh/completion)
 
 alias ..='cd ..'
 alias k=kubectl
+alias ngrs='sudo systemctl restart nginx'
