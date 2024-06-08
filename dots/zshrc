@@ -32,6 +32,18 @@ source $ZSH/oh-my-zsh.sh
 
 ###############################################################################
 
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+###############################################################################
+
+# pyenv setting
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+###############################################################################
+
 # used for gh cli auto completion
 # see: https://cli.github.com/manual/gh_completion
 [[ -d ~/.oh-my-zsh/completions ]] || mkdir ~/.oh-my-zsh/completions
