@@ -23,6 +23,9 @@ plugins=(
         zsh-autosuggestions
         zsh-history-substring-search
         zsh-completions
+        autojump
+        kubectl
+        zsh-ask
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -46,6 +49,10 @@ compinit -i
 
 ###############################################################################
 
+# completions
+fpath=($fpath ~/.zsh/completion)
+
+###############################################################################
+
 alias ..='cd ..'
 alias k=kubectl
-alias nr="npm run"
